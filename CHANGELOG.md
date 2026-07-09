@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.5
+
+- Published a validation-clean release for HACS default repository submission.
+
 ## 0.2.4
 
 - Prepared an anonymized repository package for publication.
