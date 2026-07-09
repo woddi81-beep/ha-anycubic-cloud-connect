@@ -1,0 +1,139 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Anycubic Cloud Connect",
+        "description": "Saisissez un jeton Anycubic. Le access_token de Slicer Next est recommande; un jeton web fonctionne aussi pour l'interrogation REST.",
+        "data": {
+          "auth_mode": "Mode d'authentification",
+          "token": "Jeton",
+          "device_id": "Device ID, uniquement pour le mode Android",
+          "scan_interval": "Intervalle d'interrogation en secondes",
+          "include_project": "Recuperer le dernier projet / travail d'impression"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Authentification Anycubic Cloud impossible. Verifiez le jeton et le mode d'authentification."
+    },
+    "abort": {
+      "already_configured": "Ce compte Anycubic Cloud est deja configure."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options Anycubic Cloud Connect",
+        "data": {
+          "scan_interval": "Intervalle d'interrogation en secondes",
+          "include_project": "Recuperer le dernier projet / travail d'impression"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "Statut",
+        "state": {
+          "available": "Disponible",
+          "busy": "Occupe",
+          "printing": "Impression",
+          "paused": "En pause",
+          "finished": "Termine",
+          "failed": "Echec",
+          "downloading": "Telechargement",
+          "checking": "Verification",
+          "preheating": "Prechauffage",
+          "slicing": "Tranchage",
+          "offline": "Hors ligne",
+          "unknown": "Inconnu"
+        }
+      },
+      "print_progress": {
+        "name": "Progression d'impression"
+      },
+      "download_progress": {
+        "name": "Progression du telechargement"
+      },
+      "nozzle_temperature": {
+        "name": "Temperature de buse"
+      },
+      "bed_temperature": {
+        "name": "Temperature du plateau"
+      },
+      "remaining_time": {
+        "name": "Temps restant"
+      },
+      "elapsed_time": {
+        "name": "Temps ecoule"
+      },
+      "current_layer": {
+        "name": "Couche actuelle"
+      },
+      "total_layers": {
+        "name": "Nombre total de couches"
+      },
+      "print_speed": {
+        "name": "Vitesse d'impression"
+      },
+      "fan_speed": {
+        "name": "Vitesse du ventilateur"
+      },
+      "print_count": {
+        "name": "Nombre d'impressions"
+      },
+      "total_print_time": {
+        "name": "Temps total d'impression"
+      },
+      "ace_temperature": {
+        "name": "Temperature ACE"
+      },
+      "ace_drying_remaining": {
+        "name": "Sechage ACE restant"
+      },
+      "ace_drying_target_temperature": {
+        "name": "Temperature cible du sechage ACE"
+      }
+    },
+    "binary_sensor": {
+      "online": {
+        "name": "En ligne"
+      },
+      "busy": {
+        "name": "Occupe"
+      },
+      "printing": {
+        "name": "Impression"
+      },
+      "paused": {
+        "name": "En pause"
+      },
+      "ace_drying": {
+        "name": "Sechage ACE"
+      }
+    },
+    "button": {
+      "pause_print": {
+        "name": "Mettre en pause"
+      },
+      "resume_print": {
+        "name": "Reprendre l'impression"
+      },
+      "cancel_print": {
+        "name": "Annuler l'impression"
+      },
+      "refresh": {
+        "name": "Actualiser"
+      }
+    },
+    "switch": {
+      "ace_auto_feed_1": {
+        "name": "ACE 1 alimentation auto"
+      },
+      "ace_auto_feed_2": {
+        "name": "ACE 2 alimentation auto"
+      }
+    }
+  }
+}

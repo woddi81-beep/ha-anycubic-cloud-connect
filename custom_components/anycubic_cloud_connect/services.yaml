@@ -1,0 +1,293 @@
+pause_print:
+  name: Pause print
+  description: Pause the active print job on an Anycubic printer.
+  target: {}
+  fields:
+    printer_id:
+      name: Printer ID
+      description: Numeric Anycubic printer ID.
+      required: true
+      selector:
+        number:
+          min: 1
+          mode: box
+    config_entry_id:
+      name: Config entry ID
+      description: Optional Home Assistant config entry ID, useful when multiple Anycubic accounts are configured.
+      required: false
+      selector:
+        text:
+resume_print:
+  name: Resume print
+  description: Resume a paused print job on an Anycubic printer.
+  target: {}
+  fields:
+    printer_id:
+      name: Printer ID
+      description: Numeric Anycubic printer ID.
+      required: true
+      selector:
+        number:
+          min: 1
+          mode: box
+    config_entry_id:
+      name: Config entry ID
+      description: Optional Home Assistant config entry ID, useful when multiple Anycubic accounts are configured.
+      required: false
+      selector:
+        text:
+cancel_print:
+  name: Cancel print
+  description: Cancel the active print job on an Anycubic printer.
+  target: {}
+  fields:
+    printer_id:
+      name: Printer ID
+      description: Numeric Anycubic printer ID.
+      required: true
+      selector:
+        number:
+          min: 1
+          mode: box
+    config_entry_id:
+      name: Config entry ID
+      description: Optional Home Assistant config entry ID, useful when multiple Anycubic accounts are configured.
+      required: false
+      selector:
+        text:
+ace_feed_filament:
+  name: ACE feed filament
+  description: Feed filament from an ACE slot.
+  target: {}
+  fields:
+    printer_id:
+      name: Printer ID
+      description: Numeric Anycubic printer ID.
+      required: true
+      selector:
+        number:
+          min: 1
+          mode: box
+    slot_index:
+      name: Slot index
+      description: ACE slot number, starting from 1.
+      required: true
+      selector:
+        number:
+          min: 1
+          max: 8
+          mode: box
+    box_id:
+      name: ACE box ID
+      description: ACE unit index, usually 0 for the first ACE and 1 for the second.
+      required: false
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 1
+          mode: box
+    finish:
+      name: Finish feed command
+      description: Whether to send a finish flag with the feed command.
+      required: false
+      default: false
+      selector:
+        boolean:
+ace_retract_filament:
+  name: ACE retract filament
+  description: Retract filament from the active ACE slot.
+  target: {}
+  fields:
+    printer_id:
+      name: Printer ID
+      description: Numeric Anycubic printer ID.
+      required: true
+      selector:
+        number:
+          min: 1
+          mode: box
+    box_id:
+      name: ACE box ID
+      description: ACE unit index, usually 0 for the first ACE and 1 for the second.
+      required: false
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 1
+          mode: box
+ace_set_auto_feed:
+  name: ACE set auto feed
+  description: Enable or disable ACE automatic filament feeding.
+  target: {}
+  fields:
+    printer_id:
+      name: Printer ID
+      description: Numeric Anycubic printer ID.
+      required: true
+      selector:
+        number:
+          min: 1
+          mode: box
+    enabled:
+      name: Enabled
+      description: Whether ACE auto feed should be enabled.
+      required: true
+      selector:
+        boolean:
+    box_id:
+      name: ACE box ID
+      description: ACE unit index, usually 0 for the first ACE and 1 for the second.
+      required: false
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 1
+          mode: box
+ace_set_slot:
+  name: ACE set slot
+  description: Set material type and RGB color metadata for an ACE slot.
+  target: {}
+  fields:
+    printer_id:
+      name: Printer ID
+      description: Numeric Anycubic printer ID.
+      required: true
+      selector:
+        number:
+          min: 1
+          mode: box
+    slot_index:
+      name: Slot index
+      description: ACE slot number, starting from 1.
+      required: true
+      selector:
+        number:
+          min: 1
+          max: 8
+          mode: box
+    material_type:
+      name: Material type
+      description: Filament material type.
+      required: true
+      example: PLA
+      selector:
+        select:
+          options:
+            - PLA
+            - PETG
+            - ABS
+            - PACF
+            - PC
+            - ASA
+            - HIPS
+            - PA
+            - PLA SE
+          custom_value: true
+    red:
+      name: Red
+      description: Red RGB component, 0-255.
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 255
+          mode: box
+    green:
+      name: Green
+      description: Green RGB component, 0-255.
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 255
+          mode: box
+    blue:
+      name: Blue
+      description: Blue RGB component, 0-255.
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 255
+          mode: box
+    box_id:
+      name: ACE box ID
+      description: ACE unit index, usually 0 for the first ACE and 1 for the second.
+      required: false
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 1
+          mode: box
+ace_dry_start:
+  name: ACE start drying
+  description: Start ACE filament drying.
+  target: {}
+  fields:
+    printer_id:
+      name: Printer ID
+      description: Numeric Anycubic printer ID.
+      required: true
+      selector:
+        number:
+          min: 1
+          mode: box
+    target_temp:
+      name: Target temperature
+      description: Drying target temperature in °C.
+      required: false
+      default: 45
+      selector:
+        number:
+          min: 30
+          max: 70
+          unit_of_measurement: °C
+          mode: slider
+    duration:
+      name: Duration
+      description: Drying duration in seconds.
+      required: false
+      default: 3600
+      selector:
+        number:
+          min: 60
+          max: 86400
+          unit_of_measurement: seconds
+          mode: box
+    box_id:
+      name: ACE box ID
+      description: ACE unit index, usually 0 for the first ACE and 1 for the second.
+      required: false
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 1
+          mode: box
+ace_dry_stop:
+  name: ACE stop drying
+  description: Stop ACE filament drying.
+  target: {}
+  fields:
+    printer_id:
+      name: Printer ID
+      description: Numeric Anycubic printer ID.
+      required: true
+      selector:
+        number:
+          min: 1
+          mode: box
+    box_id:
+      name: ACE box ID
+      description: ACE unit index. Use -1 to target the default box if the cloud API supports it.
+      required: false
+      default: -1
+      selector:
+        number:
+          min: -1
+          max: 1
+          mode: box

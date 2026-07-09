@@ -1,0 +1,52 @@
+name: Bug report
+description: Report a problem with the Anycubic Cloud Connect integration
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe what happened and what you expected.
+    validations:
+      required: true
+  - type: input
+    id: ha_version
+    attributes:
+      label: Home Assistant version
+      placeholder: "2026.7.0"
+    validations:
+      required: true
+  - type: input
+    id: integration_version
+    attributes:
+      label: Integration version
+      placeholder: "0.2.0"
+    validations:
+      required: true
+  - type: input
+    id: printer_model
+    attributes:
+      label: Printer model and firmware
+      placeholder: "Kobra 3 Combo, firmware ..."
+    validations:
+      required: false
+  - type: dropdown
+    id: auth_mode
+    attributes:
+      label: Auth mode
+      options:
+        - slicer
+        - web
+        - android
+        - unknown
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs
+      description: Paste sanitized logs. Remove tokens, cookies, and private IDs.
+      render: text
+    validations:
+      required: false

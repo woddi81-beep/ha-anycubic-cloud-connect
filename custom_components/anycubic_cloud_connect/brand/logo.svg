@@ -1,0 +1,15 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Anycubic Cloud Connect community logo</title>
+  <defs><linearGradient id="bg" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse"><stop stop-color="#115786"/><stop offset="1" stop-color="#38B5DC"/></linearGradient></defs>
+  <rect x="16" y="16" width="480" height="480" rx="92" fill="url(#bg)"/>
+  <path d="M125 184H147C154 154 184 134 214 138C229 108 263 96 295 102C326 108 350 132 357 162C382 158 405 178 405 203C405 209 404 214 402 219H140" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M156 329L180 236H337L358 329" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M181 236L214 201H359L338 236" stroke="#DAF8FF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M358 329L392 296V217L359 201" stroke="#DAF8FF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="123" y="328" width="267" height="41" rx="20" fill="white" fill-opacity="0.18" stroke="white" stroke-width="8"/>
+  <path d="M206 316H311" stroke="#9AE7FC" stroke-width="8" stroke-linecap="round"/>
+  <rect x="228" y="249" width="56" height="35" rx="7" fill="white"/>
+  <path d="M240 284H272L256 309L240 284Z" fill="white"/>
+  <path d="M173 393C203 408 309 408 339 393" stroke="white" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="173" cy="393" r="8" fill="white" fill-opacity="0.85"/><circle cx="256" cy="404" r="8" fill="white" fill-opacity="0.85"/><circle cx="339" cy="393" r="8" fill="white" fill-opacity="0.85"/>
+</svg>

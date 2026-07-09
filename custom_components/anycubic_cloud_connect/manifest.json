@@ -1,0 +1,16 @@
+{
+  "domain": "anycubic_cloud_connect",
+  "name": "Anycubic Cloud Connect",
+  "codeowners": [
+    "@woddi81-beep"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/woddi81-beep/ha-anycubic-cloud-connect#readme",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/woddi81-beep/ha-anycubic-cloud-connect/issues",
+  "requirements": [
+    "anycubic-cloud-mcp==0.2.6"
+  ],
+  "version": "0.2.4"
+}

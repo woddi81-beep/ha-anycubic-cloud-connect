@@ -1,0 +1,139 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Anycubic Cloud Connect",
+        "description": "Введите токен Anycubic. Рекомендуется access_token из Slicer Next; web-токен тоже подходит для REST-опроса.",
+        "data": {
+          "auth_mode": "Режим авторизации",
+          "token": "Токен",
+          "device_id": "Device ID, только для Android-режима",
+          "scan_interval": "Интервал опроса, секунд",
+          "include_project": "Загружать данные последнего проекта / печати"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не удалось авторизоваться в Anycubic Cloud. Проверьте токен и режим авторизации."
+    },
+    "abort": {
+      "already_configured": "Этот аккаунт Anycubic Cloud уже настроен."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Параметры Anycubic Cloud Connect",
+        "data": {
+          "scan_interval": "Интервал опроса, секунд",
+          "include_project": "Загружать данные последнего проекта / печати"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "Статус",
+        "state": {
+          "available": "Доступен",
+          "busy": "Занят",
+          "printing": "Печать",
+          "paused": "Приостановлено",
+          "finished": "Завершено",
+          "failed": "Ошибка",
+          "downloading": "Загрузка",
+          "checking": "Проверка",
+          "preheating": "Разогрев",
+          "slicing": "Слайсинг",
+          "offline": "Не в сети",
+          "unknown": "Неизвестно"
+        }
+      },
+      "print_progress": {
+        "name": "Прогресс печати"
+      },
+      "download_progress": {
+        "name": "Прогресс загрузки"
+      },
+      "nozzle_temperature": {
+        "name": "Температура сопла"
+      },
+      "bed_temperature": {
+        "name": "Температура стола"
+      },
+      "remaining_time": {
+        "name": "Оставшееся время"
+      },
+      "elapsed_time": {
+        "name": "Прошедшее время"
+      },
+      "current_layer": {
+        "name": "Текущий слой"
+      },
+      "total_layers": {
+        "name": "Всего слоёв"
+      },
+      "print_speed": {
+        "name": "Скорость печати"
+      },
+      "fan_speed": {
+        "name": "Скорость вентилятора"
+      },
+      "print_count": {
+        "name": "Количество печатей"
+      },
+      "total_print_time": {
+        "name": "Общее время печати"
+      },
+      "ace_temperature": {
+        "name": "Температура ACE"
+      },
+      "ace_drying_remaining": {
+        "name": "Осталось сушки ACE"
+      },
+      "ace_drying_target_temperature": {
+        "name": "Целевая температура сушки ACE"
+      }
+    },
+    "binary_sensor": {
+      "online": {
+        "name": "Онлайн"
+      },
+      "busy": {
+        "name": "Занят"
+      },
+      "printing": {
+        "name": "Печатает"
+      },
+      "paused": {
+        "name": "Пауза"
+      },
+      "ace_drying": {
+        "name": "Сушка ACE"
+      }
+    },
+    "button": {
+      "pause_print": {
+        "name": "Пауза печати"
+      },
+      "resume_print": {
+        "name": "Возобновить печать"
+      },
+      "cancel_print": {
+        "name": "Отменить печать"
+      },
+      "refresh": {
+        "name": "Обновить"
+      }
+    },
+    "switch": {
+      "ace_auto_feed_1": {
+        "name": "Автоподача ACE 1"
+      },
+      "ace_auto_feed_2": {
+        "name": "Автоподача ACE 2"
+      }
+    }
+  }
+}

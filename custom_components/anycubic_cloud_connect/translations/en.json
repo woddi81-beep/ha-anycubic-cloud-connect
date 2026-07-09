@@ -1,0 +1,139 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Anycubic Cloud Connect",
+        "description": "Enter an Anycubic token. Slicer Next access_token is recommended; web token also works for REST polling.",
+        "data": {
+          "auth_mode": "Authentication mode",
+          "token": "Token",
+          "device_id": "Device ID, only for Android mode",
+          "scan_interval": "Polling interval, seconds",
+          "include_project": "Fetch latest project / print job details"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not authenticate with Anycubic Cloud. Check token and auth mode."
+    },
+    "abort": {
+      "already_configured": "This Anycubic Cloud account is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Anycubic Cloud Connect options",
+        "data": {
+          "scan_interval": "Polling interval, seconds",
+          "include_project": "Fetch latest project / print job details"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "Status",
+        "state": {
+          "available": "Available",
+          "busy": "Busy",
+          "printing": "Printing",
+          "paused": "Paused",
+          "finished": "Finished",
+          "failed": "Failed",
+          "downloading": "Downloading",
+          "checking": "Checking",
+          "preheating": "Preheating",
+          "slicing": "Slicing",
+          "offline": "Offline",
+          "unknown": "Unknown"
+        }
+      },
+      "print_progress": {
+        "name": "Print progress"
+      },
+      "download_progress": {
+        "name": "Download progress"
+      },
+      "nozzle_temperature": {
+        "name": "Nozzle temperature"
+      },
+      "bed_temperature": {
+        "name": "Bed temperature"
+      },
+      "remaining_time": {
+        "name": "Remaining time"
+      },
+      "elapsed_time": {
+        "name": "Elapsed time"
+      },
+      "current_layer": {
+        "name": "Current layer"
+      },
+      "total_layers": {
+        "name": "Total layers"
+      },
+      "print_speed": {
+        "name": "Print speed"
+      },
+      "fan_speed": {
+        "name": "Fan speed"
+      },
+      "print_count": {
+        "name": "Print count"
+      },
+      "total_print_time": {
+        "name": "Total print time"
+      },
+      "ace_temperature": {
+        "name": "ACE temperature"
+      },
+      "ace_drying_remaining": {
+        "name": "ACE drying remaining"
+      },
+      "ace_drying_target_temperature": {
+        "name": "ACE drying target temperature"
+      }
+    },
+    "binary_sensor": {
+      "online": {
+        "name": "Online"
+      },
+      "busy": {
+        "name": "Busy"
+      },
+      "printing": {
+        "name": "Printing"
+      },
+      "paused": {
+        "name": "Paused"
+      },
+      "ace_drying": {
+        "name": "ACE drying"
+      }
+    },
+    "button": {
+      "pause_print": {
+        "name": "Pause print"
+      },
+      "resume_print": {
+        "name": "Resume print"
+      },
+      "cancel_print": {
+        "name": "Cancel print"
+      },
+      "refresh": {
+        "name": "Refresh"
+      }
+    },
+    "switch": {
+      "ace_auto_feed_1": {
+        "name": "ACE 1 auto feed"
+      },
+      "ace_auto_feed_2": {
+        "name": "ACE 2 auto feed"
+      }
+    }
+  }
+}

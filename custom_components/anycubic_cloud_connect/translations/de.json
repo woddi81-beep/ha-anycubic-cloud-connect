@@ -1,0 +1,139 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Anycubic Cloud Connect",
+        "description": "Gib einen Anycubic-Token ein. Empfohlen ist der access_token aus Slicer Next; ein Web-Token funktioniert ebenfalls fuer REST-Abfragen.",
+        "data": {
+          "auth_mode": "Authentifizierungsmodus",
+          "token": "Token",
+          "device_id": "Device ID, nur fuer Android-Modus",
+          "scan_interval": "Abfrageintervall in Sekunden",
+          "include_project": "Letztes Projekt / Druckauftrag abrufen"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Authentifizierung bei Anycubic Cloud fehlgeschlagen. Token und Authentifizierungsmodus pruefen."
+    },
+    "abort": {
+      "already_configured": "Dieses Anycubic-Cloud-Konto ist bereits eingerichtet."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Optionen fuer Anycubic Cloud Connect",
+        "data": {
+          "scan_interval": "Abfrageintervall in Sekunden",
+          "include_project": "Letztes Projekt / Druckauftrag abrufen"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "Status",
+        "state": {
+          "available": "Verfuegbar",
+          "busy": "Beschaeftigt",
+          "printing": "Druckt",
+          "paused": "Pausiert",
+          "finished": "Fertig",
+          "failed": "Fehlgeschlagen",
+          "downloading": "Laedt herunter",
+          "checking": "Prueft",
+          "preheating": "Heizt vor",
+          "slicing": "Slicing",
+          "offline": "Offline",
+          "unknown": "Unbekannt"
+        }
+      },
+      "print_progress": {
+        "name": "Druckfortschritt"
+      },
+      "download_progress": {
+        "name": "Download-Fortschritt"
+      },
+      "nozzle_temperature": {
+        "name": "Nozzle-Temperatur"
+      },
+      "bed_temperature": {
+        "name": "Bett-Temperatur"
+      },
+      "remaining_time": {
+        "name": "Verbleibende Zeit"
+      },
+      "elapsed_time": {
+        "name": "Vergangene Zeit"
+      },
+      "current_layer": {
+        "name": "Aktueller Layer"
+      },
+      "total_layers": {
+        "name": "Layer gesamt"
+      },
+      "print_speed": {
+        "name": "Druckgeschwindigkeit"
+      },
+      "fan_speed": {
+        "name": "Lueftergeschwindigkeit"
+      },
+      "print_count": {
+        "name": "Anzahl Drucke"
+      },
+      "total_print_time": {
+        "name": "Druckzeit gesamt"
+      },
+      "ace_temperature": {
+        "name": "ACE-Temperatur"
+      },
+      "ace_drying_remaining": {
+        "name": "ACE-Trocknung Restzeit"
+      },
+      "ace_drying_target_temperature": {
+        "name": "ACE-Trocknung Zieltemperatur"
+      }
+    },
+    "binary_sensor": {
+      "online": {
+        "name": "Online"
+      },
+      "busy": {
+        "name": "Beschaeftigt"
+      },
+      "printing": {
+        "name": "Druckt"
+      },
+      "paused": {
+        "name": "Pausiert"
+      },
+      "ace_drying": {
+        "name": "ACE trocknet"
+      }
+    },
+    "button": {
+      "pause_print": {
+        "name": "Druck pausieren"
+      },
+      "resume_print": {
+        "name": "Druck fortsetzen"
+      },
+      "cancel_print": {
+        "name": "Druck abbrechen"
+      },
+      "refresh": {
+        "name": "Aktualisieren"
+      }
+    },
+    "switch": {
+      "ace_auto_feed_1": {
+        "name": "ACE 1 Auto Feed"
+      },
+      "ace_auto_feed_2": {
+        "name": "ACE 2 Auto Feed"
+      }
+    }
+  }
+}
